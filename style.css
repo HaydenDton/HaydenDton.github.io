@@ -1,40 +1,94 @@
-.topnav {
-	background-color: #333;
-	overflow: hidden;
-	opacity: 0.85;
-	text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.topnav a {
-	float: left;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 10px;
-	text-decoration: none;
-	font-size: 17px;
+body{
+    background: #000000;
+    font-family: "serif", sans-serif;
 }
 
-.topnav a:hover {
-	background-color: #ddd;
-	color: black;
+.logo {
+    font-size: 1.65em !important;
+    margin-right: 25px !important;
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none;
 }
 
-.topnav a.active {
-	background-color: #04AA6D;
-	color: white;
+.navMenu {
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex; /* possible issue with Dot */
+    align-items: center;
 }
 
-.logo{
-	colorZ: white;
-	font-size: 28px;
+    .navMenu a {
+        color: #f6f4e6;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        display: inline-block;
+        white-space: nowrap;
+        margin-right: 20px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
 
+.navMenu a:hover{
+    color: #00ffff;
 }
 
-nav{
-    	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    .navMenu .dot {
+        width: 6px;
+        height: 6px;
+        background: #fdd63a;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
 
-	padding-left: 10%;
-	padding-right: 10%;
-}
+    }
+
+
+
+    .navMenu a:nth-child(2):hover ~ .dot {
+        -webkit-transform: translateX(130px);
+        transform: translateY(-50);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(3):hover ~ .dot {
+        -webkit-transform: translateX(200px);
+        -webkit-transform: translateY(50px);
+        transform: translateX(200px) translateY(-50);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(4):hover ~ .dot {
+        -webkit-transform: translateX(285px);
+        transform: translateX(285px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(5):hover ~ .dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+
