@@ -13,7 +13,7 @@ body {
 .logo {
     font-size: 1.8em !important;
     margin-right: 30px !important;
-    margin-left: 230px;
+    margin-left: 200px;
     color: #333; /* Adjust the color as needed */
     text-decoration: none;
 }
@@ -87,11 +87,11 @@ body {
     }
 
 .video {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 725px;
     overflow: hidden;
     position: center;
-    margin-bottom: -3px;
+    display: block;
 }
 
 .about {
@@ -120,3 +120,40 @@ body {
     font-weight: 460;
     padding-block: 20px 24px;
 }
+
+
+
+    .grid-item img {
+        width: 280px;
+        height: 280px;
+        border: 2px solid white;
+        display: center;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid: inherit;
+}
+
+.grid-item {
+    display: center;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.content {
+    
+    align-items: center;
+    
+}
+
+.content img {
+    
+}
+
+
+
