@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
@@ -8,17 +9,17 @@
 <body class="navBar">
     <nav class="navMenu">
         <a href="#" class="logo">Hayden Dalton</a>
-        <a href="#about_me">&#x270E About</a>
-        <a href="#personal_projects">&#x2764 Personal Projects</a>
-        <a href="#">&#x2751 Resume</a>
-        <a href="#contact_me">&#9993 Contact</a>
-        <div class="dot"></div>
+        <a href="#about_me" role="button" aria-labelledby="about_me_label">&#x270E About</a>
+        <a href="#personal_projects_label" role="button" aria-labelledby="personal_projects_label">&#x2764 Personal Projects</a>
+        <a href="#" role="button" aria-labelledby="resume_label">&#x2751 Resume</a>
+        <a href="#contact_me" role="button" aria-labelledby="contact_me_label">&#9993 Contact</a>
+        <div class="dot" role="presentation"></div>
     </nav>
 
     <img class="video" src="Media/Soulcatcher.png" alt="Soulcatcher" />
     <div id="about_me" class="about">
         <div>
-        <h2>About me</h2>
+        <h1 id="about_me_label">About me</h1>
             <p>
             Greetings! I'm Hayden, my passion is designing and programming games. Currently pursuing a
             degree in Games, Interactive Media, and Mobile Technology(GIMM) at Boise State University, my primary focus revolves
@@ -29,7 +30,7 @@
         </div>
     </div>
     <div>
-        <h2 id="personal_projects"class="title">Personal Projects</h2>
+        <h2 id="personal_projects_label"class="title">Personal Projects</h2>
     </div>
     <div class="grid-container">
         <div>Soulcatcher</div>
@@ -94,7 +95,7 @@
         <p></p>
     </div>
     <div id="contact_me" class="about">
-        <h2>Contact Me</h2>
+        <h2 id="contact_me_label">Contact Me</h2>
         <a href="https://www.linkedin.com/in/hayden-dalton-492010199/" target="_blank"><img src="Media/linkedin.png" alt="linkedin" /></a>
         <a href="https://www.youtube.com/playlist?list=PLjPCRzOwuAYOqK7t9cZw2JDDJzxrM7f0y" target="_blank"><img src="Media/youtube.png" alt="youtube" /></a>
         <a href="mailto:dalthaye@gmail.com"><img src="Media/email.png" alt="email" /></a>

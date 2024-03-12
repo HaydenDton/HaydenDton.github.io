@@ -121,6 +121,13 @@ body {
     .about p {
         flex: 1;
     }
+
+h1 {
+    font-family: 'Copperplate Gothic', sans-serif;
+    font-size: 45px;
+    font-weight: 460;
+}
+
 h2 {
     font-family: 'Copperplate Gothic', sans-serif;
     font-size: 45px;
@@ -175,6 +182,7 @@ h2 {
         border: 3px solid #f6f4e6;
         border-radius: 25px;
     }
+
 
 
 
